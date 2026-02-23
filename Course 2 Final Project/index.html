@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Professional Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">Alex Johnson</h1>
+        <nav>
+            <ul>
+                <li><a href="#aboutme">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+            </ul>
+        </nav>
+        <i class="fas fa-home home-icon" onclick="scrollToHome()"></i>
+    </header>
+
+    <div class="container">
+        <!-- About Me Section -->
+        <section id="aboutme">
+            <div class="about-header">
+                <h2>About Me</h2>
+                <p class="about-subtitle">Full Stack Developer | Problem Solver | Tech Enthusiast</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" alt="Profile Picture">
+                </div>
+                <div class="about-text">
+                    <h3>Alex Johnson</h3>
+                    <div class="about-highlight">
+                        <p class="intro-text">
+                            Full Stack Developer with 3 years of experience crafting digital solutions
+                        </p>
+                    </div>
+                    <p>
+                        I am a passionate Full Stack Developer with 3 years of professional experience in building responsive and user-friendly web applications. 
+                        I specialize in modern technologies and have successfully delivered multiple projects for leading tech companies. 
+                        My expertise lies in creating seamless user experiences combined with robust backend solutions. 
+                        I am committed to continuous learning and staying updated with the latest industry trends to provide the best solutions to my clients.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js-square"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react"></i>
+                    <p>React</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-node-js"></i>
+                    <p>Node.js</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <p>MongoDB</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Fashion E-Store</h3>
+                        <p>
+                            A modern e-commerce platform for fashion retailers with advanced product filtering, size charts, customer reviews, and integrated payment gateway. Features include wishlist functionality and personalized recommendations.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-list-check"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Team Collaboration Hub</h3>
+                        <p>
+                            A comprehensive project management suite with real-time collaboration, task assignments, progress tracking, and team communication. Built with React and Node.js for seamless performance and scalability.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Business Intelligence Dashboard</h3>
+                        <p>
+                            Professional analytics platform providing real-time business metrics, custom reports, data visualization, and predictive insights. Enables data-driven decision making with interactive charts and automated alerts.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Video Streaming Platform</h3>
+                        <p>
+                            Developed a Netflix-like streaming service with video player, personalized recommendations, watch history, and subscription management. Optimized for performance across all devices.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Food Delivery App</h3>
+                        <p>
+                            Complete food delivery platform with restaurant listings, real-time order tracking, payment processing, and user reviews. Integrated maps API for location services and estimated delivery time calculations.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Health & Fitness Tracker</h3>
+                        <p>
+                            Wellness application tracking daily activities, nutrition intake, workout routines, and health metrics. Features include goal setting, progress visualization, and personalized health recommendations based on user data.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recommendations Section -->
+        <section id="recommendations">
+            <h2>Recommendations</h2>
+            
+            <div class="recommendations-list" id="recommendationsList">
+                <div class="recommendation-card">
+                    <h4>Sarah Mitchell</h4>
+                    <div class="position">Senior Project Manager at Tech Innovations</div>
+                    <p>
+                        "Alex is an outstanding developer with exceptional problem-solving skills. His attention to detail and ability 
+                        to deliver projects on time made a significant impact on our team. Highly recommended for any development role."
+                    </p>
+                </div>
+
+                <div class="recommendation-card">
+                    <h4>David Chen</h4>
+                    <div class="position">Lead Developer at Digital Solutions</div>
+                    <p>
+                        "Working with Alex was a great experience. He demonstrates strong technical expertise and excellent communication skills. 
+                        His contributions to our projects were invaluable, and I would definitely work with him again."
+                    </p>
+                </div>
+
+                <div class="recommendation-card">
+                    <h4>Emily Rodriguez</h4>
+                    <div class="position">HR Manager at CreativeTech Studios</div>
+                    <p>
+                        "Alex is not only a talented developer but also a great team player. He actively participates in team discussions 
+                        and is always willing to help colleagues. A true asset to any organization."
+                    </p>
+                </div>
+            </div>
+
+            <!-- Add Recommendation Form -->
+            <div class="form-section">
+                <h3>Add a Recommendation</h3>
+                <form id="recommendationForm">
+                    <div class="form-group">
+                        <label for="recommenderName">Your Name</label>
+                        <input type="text" id="recommenderName" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="recommenderPosition">Your Position/Title</label>
+                        <input type="text" id="recommenderPosition" name="position" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="recommendationText">Recommendation</label>
+                        <textarea id="recommendationText" name="recommendation" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Recommendation</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
