@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Social Media Dashboard</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="spacer"></div>
+    <div class="actions">
+      <button id="btnRegister" class="btn white">Register</button>
+      <button id="btnLogin" class="btn white">Login</button>
+      <button id="btnLogout" class="btn white hidden">Logout</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Welcome to the Social Media Dashboard App!</h1>
+    <p class="subtitle">Explore and manage your social media accounts in one place.</p>
+
+    <div class="platforms">
+      <button class="btn blue">FACESNAP</button>
+      <button class="btn blue">INSTABOOK</button>
+      <button class="btn blue">TWEETCHAT</button>
+    </div>
+
+    <section class="card">
+      <h2>Auth</h2>
+
+      <div id="authForms" class="grid">
+        <div class="panel">
+          <h3>Register</h3>
+          <input id="rUsername" placeholder="Username" />
+          <input id="rEmail" placeholder="Email" />
+          <input id="rPassword" placeholder="Password (min 6)" type="password" />
+          <button id="doRegister" class="btn blue full">Create Account</button>
+        </div>
+
+        <div class="panel">
+          <h3>Login</h3>
+          <input id="lUser" placeholder="Email or Username" />
+          <input id="lPass" placeholder="Password" type="password" />
+          <button id="doLogin" class="btn blue full">Login</button>
+        </div>
+      </div>
+
+      <p id="authMsg" class="msg"></p>
+    </section>
+
+    <section class="card">
+      <h2>Posts</h2>
+
+      <div class="panel">
+        <p class="hint">Create post works only after login.</p>
+        <input id="pTitle" placeholder="Post title" />
+        <textarea id="pContent" placeholder="Write something..."></textarea>
+        <button id="createPost" class="btn blue full">Create Post</button>
+        <p id="postMsg" class="msg"></p>
+      </div>
+
+      <div class="panel">
+        <div class="row">
+          <button id="prev" class="btn white">Prev</button>
+          <span id="pageInfo"></span>
+          <button id="next" class="btn white">Next</button>
+        </div>
+        <div id="postList" class="posts"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
